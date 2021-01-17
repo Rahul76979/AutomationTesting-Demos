@@ -1,5 +1,10 @@
 package com.temp.junit.temptestcase;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import javax.sql.rowset.FilteredRowSet;
+
 import org.junit.jupiter.api.*;
 
 /**
@@ -31,6 +36,8 @@ public class FirstTestTest
     @Test
     @DisplayName("First test")
     void firstTest() {
+    	int c = FirstTest.add(10, 20);
+    	assertEquals(c, 50);
         System.out.println("First test First method");
     }
 
